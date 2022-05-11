@@ -1,7 +1,7 @@
 <?php session_start(); /* Starts the session */
 
 if (!isset($_SESSION['UserData']['Password'])) {
-	header("location:landing1.php");
+	header("location:index.php");
 	exit;
 }
 ?>
