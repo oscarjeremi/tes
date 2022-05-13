@@ -55,13 +55,13 @@ if (isset($_POST['Submit'])) {
   <div id="loading">
     <div class="load-circle"><span class="one"></span></div>
   </div>
-  <div class="site-wrapper overflow-hidden dark-theme">
-    <header class="site-header header-8 bg--conflower-blue sticky-header">
+  <div class="site-wrapper overflow-hidden light-theme">
+    <header class="site-header header-8 bg--conflower-blue ">
       <div class="container-fluid pr-lg--30 pl-lg--30">
-        <nav class="navbar site-navbar offcanvas-active navbar-expand-lg navbar-light mb--30">
+        <nav class="navbar site-navbar navbar-expand-lg navbar-light mb--30">
           <!-- Brand Logo-->
-          <div class="container-fluid"><a class="navbar-brand" style="color: #ECECEC;" href="">
-              <h3>CRM</h3>
+          <div class="container-fluid"><a class="navbar-brand" style="color: #19191b;" href="">
+              <h3>Costumer Care Treg3</h3>
             </a></div>
           <div class="collapse navbar-collapse" id="mobile-menu">
             <div class="navbar-nav ml-lg-auto mr--10">
@@ -79,9 +79,9 @@ if (isset($_POST['Submit'])) {
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="section-title text-center">
-              <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="2000">Linked Spreadsheet
-                <span class="text--primary">(Open)</span>
+              <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="2000">Link Operasional CRM
               </h2>
+              <p data-aos="fade-up" data-aos-duration="2100" data-aos-once="true" data-aos-delay="2100">Pilih akses link yang diperlukan :</p>
             </div>
           </div>
         </div>
@@ -131,8 +131,7 @@ if (isset($_POST['Submit'])) {
         <div class="row justify-content-center">
           <div class="col-lg-10">
             <div class="section-title text-center">
-              <h2 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="500">Linked Spreadsheet
-                <span class="text--primary">(Private)</span>
+              <h2 data-aos="fade-up" data-aos-duration="800" data-aos-once="true" data-aos-delay="500">Link Operasional CRM (Private)
               </h2>
             </div>
           </div>
