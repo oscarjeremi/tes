@@ -21675,32 +21675,32 @@
   color: rgba(255, 255, 255, 0.7);
 }
 
-.section-title h2, .section-title .title {
+.section-title h3, .section-title .title {
   color: #19191b;
   font-family: "CircularStd", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: -2.5px;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 54px;
   margin-bottom: 15px;
 }
 
 @media (min-width: 480px) {
-  .section-title h2, .section-title .title {
+  .section-title h3, .section-title .title {
     font-size: 48px;
     line-height: 58px;
   }
 }
 
 @media (min-width: 576px) {
-  .section-title h2, .section-title .title {
+  .section-title h3, .section-title .title {
     font-size: 50px;
     line-height: 62px;
   }
 }
 
 @media (min-width: 992px) {
-  .section-title h2, .section-title .title {
+  .section-title h3, .section-title .title {
     font-size: 60px;
     line-height: 70px;
   }
@@ -23077,10 +23077,15 @@ p {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.drop-menu-item a{
+  text-decoration: none;
 }
 
 .menu-dropdown > .drop-menu-item:hover > a {
-  color: #5454d4;
+  color: #E82418;
 }
 
 .menu-dropdown > .drop-menu-item.dropdown {
@@ -25248,6 +25253,7 @@ p {
   letter-spacing: -0.56px;
   margin-bottom: 17px;
   text-indent: 25px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, .3);
 }
 
 .omega-contact-form input {
@@ -27799,6 +27805,16 @@ p {
     -webkit-box-pack: justify;
             justify-content: space-between;
   }
+}
+
+.brand-logo img{
+  height: 50px;
+  width: 150px;
+}
+
+.brand-logo2 img{
+  height: 29px;
+  width: 100px;
 }
 
 .brand-logos .single-brand {
@@ -31980,7 +31996,7 @@ p {
 /* --------> Service_Area_Styles 
 --------------------------------------*/
 /*>>>>>>>> Service area styling (landing-8)<<<<<<<<<*/
-.omga-08__service-section {
+/* .omga-08__service-section {
   padding-top: 40px;
   padding-bottom: 50px;
 }
@@ -31990,7 +32006,7 @@ p {
     padding-top: 100px;
     padding-bottom: 150px;
   }
-}
+} */
 
 .service-card--1 {
   border-radius: 10px;
@@ -32157,7 +32173,7 @@ p {
 }
 
 .case-card--1 .c-card-text {
-  background: #5454d4;
+  background: #E82418;
   position: relative;
   z-index: 1;
   -webkit-transition: .4s;
@@ -32210,7 +32226,7 @@ p {
 }
 
 .case-card--1 .c-card-text .shape svg path {
-  fill: #5454d4;
+  fill: #626273;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -32375,12 +32391,13 @@ p {
 /*>>>>>>>> Contact Section styling (landing-8)<<<<<<<<<*/
 .omga-08__contact-section {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 @media (min-width: 768px) {
   .omga-08__contact-section {
     margin-top: 150px;
+    /* margin-bottom: 5rem; */
   }
 }
 
@@ -32421,7 +32438,7 @@ p {
   height: 49%;
   content: "";
   width: 100%;
-  background: #5454d4;
+  background: #E82418;
   z-index: -1;
 }
 
@@ -32430,7 +32447,7 @@ p {
 }
 
 .omga-08__contact-section .form-title-block .f-title {
-  color: #19191b;
+  color: #E82418;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: -1.88px;
@@ -32450,13 +32467,14 @@ p {
 }
 
 .omga-08__contact-form {
-  box-shadow: 0 20px 61px rgba(65, 62, 101, 0.14);
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, .3);
   border-radius: 10px;
   background-color: #f7f7fb;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 25px;
   padding-top: 30px;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 576px) {
@@ -32496,7 +32514,7 @@ p {
 .omga-08__contact-form .form-control {
   height: 73px;
   border-radius: 10px;
-  border: 1px solid #eae9f2;
+  border: 1px solid #9d99c3;
   background-color: #ffffff;
   color: #9c9aaa;
   font-size: 18px;

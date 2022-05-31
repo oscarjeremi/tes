@@ -51,42 +51,69 @@ $get = mysqli_query($koneksi, $query);
 			<div class="container-fluid pr-lg--30 pl-lg--30">
 				<nav class="navbar site-navbar navbar-expand-lg navbar-light mb--30">
 					<!-- Brand Logo-->
-					<div class="container-fluid"><a class="navbar-brand" style="color: #19191b;" href="">
-							<h3>COSTUMER CARE TREG3</h3>
-						</a>
-					</div>
+					<div class="brand-logo"><img src="./image/telkom/Logo-Telkom-2015.png" style="width: 200x; height: 100px" alt=""></div>
+					<div class="brand-logo2"><img src="./image/telkom/BUMN2.png" style="width: 100x;" alt=""></div>
+					<!-- <div class="brand-logo"><a href="javascript:"><img src="./image/png/logo-white.png" alt=""></a></div> -->
 					<div class="collapse navbar-collapse" id="mobile-menu">
 						<div class="navbar-nav ml-lg-auto mr--10">
+							<ul class="navbar-nav main-menu">
+								<div class="brand-logo2"><img src="./image/telkom/Logo IndiHome.png" style="width: 100px;" alt=""></div>
+							</ul>
 							<button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
 								<i class="icon icon-simple-remove"></i>
 							</button>
 						</div>
 					</div>
-					<div class="header-btns ml-auto ml-lg-0"><a class="btn btn--primary btn-header hvr-bounce-to-left goto" href="logout.php">Kembali</a>
-					</div>
-					<button class="navbar-toggler btn-close-off-canvas toggler-white" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-						<i class="icon icon-simple-remove icon-close"></i>
-						<i class="icon icon-menu-34 icon-burger"></i>
-					</button>
 				</nav>
 			</div>
 		</header>
+		<div class="container-fluid pr-lg--30 pl-lg--30">
+			<nav class="navbar site-navbar navbar-expand-lg navbar-light mb--30">
+				<!-- Brand Logo-->
+				<div class="collapse navbar-collapse" id="mobile-menu">
+					<div class="navbar-nav ml-lg-auto mr--10">
+						<button class="btn-close navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="true" aria-label="Toggle navigation">
+							<i class="icon icon-simple-remove"></i>
+						</button>
+					</div>
+				</div>
+				<div class="header-btns ml-auto ml-lg-0">
+					<ul class="navbar-nav main-menu">
+						<li class="nav-item dropdown">
+							<a class="btn btn--primary btn-header hvr-bounce-to-left goto nav-link dropdown-toggle" id="navbarDropdown" href="#features" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu</a>
+							<ul class="menu-dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+								<li class="drop-menu-item">
+									<a class="" href="add_private.php">Baru+</a>
+								</li>
+								<li class="drop-menu-item">
+									<a class="" href="delete_private.php">Hapus</a>
+								</li>
+								<hr>
+								<li class="drop-menu-item">
+									<a class="" href="logout.php">Kembali</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 		<!-- Service Section -->
 		<div class="omga-08__service-section">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-lg-10">
 						<div class="section-title text-center">
-							<h2 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="2000">
+							<h3 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" data-aos-delay="2000">
 								Link Operasional CRM (Private)
-							</h2>
+							</h3>
 							<p data-aos="fade-up" data-aos-duration="2100" data-aos-once="true" data-aos-delay="2100">
 								Pilih akses link yang diperlukan :</p>
 						</div>
 					</div>
 				</div>
 				<div class="mt-lg--45">
-					<div class="row mt-lg--30">
+					<div class="row mt-lg--30 mb-lg--45">
 						<?php
 						$n = mysqli_num_rows($get);
 						if ($n !== 0) {
@@ -109,22 +136,24 @@ $get = mysqli_query($koneksi, $query);
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="footer-section footer-1 bg-indigo omga-footer--8">
-				<div class="copyright-area">
-					<div class="container">
-						<div class="row align-items-center">
-							<div class="col-sm-6  text-sm-left text-center mt-2 mb-sm-0">
-								<label for="">
-									<p>@CRM3 2022</p>
-								</label>
-							</div>
-							<div class="col-sm-6 text-sm-right text-center">
-								<ul class="social-icons">
-									<li><a href="https://twitter.com/TelkomJabar"><i class="fab fa-twitter"></i></a>
-									</li>
-									<li><a href="https://www.linkedin.com/company/telekomunikasi-indonesia/mycompany/"><i class="fab fa-linkedin"></i></a></li>
-								</ul>
+		<div>
+			<div class="footer">
+				<div class="footer-section fixed-bottom footer-1 bg-indigo omga-footer--8">
+					<div class="copyright-area">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-sm-6  text-sm-left text-center mt-2 mb-sm-0">
+									<label for="">
+										<p>@CRM3 2022</p>
+									</label>
+								</div>
+								<div class="col-sm-6 text-sm-right text-center">
+									<ul class="social-icons">
+										<li><a href="https://twitter.com/TelkomJabar"><i class="fab fa-twitter"></i></a>
+										</li>
+										<li><a href="https://www.linkedin.com/company/telekomunikasi-indonesia/mycompany/"><i class="fab fa-linkedin"></i></a></li>
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
